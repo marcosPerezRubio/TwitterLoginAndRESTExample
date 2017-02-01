@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.marcos.twitterloginandrestexample">
+
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -15,10 +17,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <meta-data
             android:name="io.fabric.ApiKey"
-            android:value="65d7aca3dad74dfd9ce6c86951f7c5e655733b5f"
-            />
+            android:value="65d7aca3dad74dfd9ce6c86951f7c5e655733b5f" />
+
+        <activity
+            android:name=".RESTActivity"
+            android:label="@string/title_activity_rest"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
